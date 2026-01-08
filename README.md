@@ -27,6 +27,22 @@ This is deliberate and by design.
 ---
 
 ## What I Build (Conceptually)
+flowchart LR
+    User[Traveler]
+    UI[Chat Interface]
+    Agent[RAG Agent]
+    Bedrock[AWS Bedrock]
+    VectorDB[AWS Vector Store]
+    Content[Approved Knowledge Sources]
+
+    User --> UI
+    UI --> Agent
+    Agent --> Bedrock
+    Agent --> VectorDB
+    VectorDB --> Content
+    Agent --> UI
+
+
 
 ### 1. AI Delivery Automation (Internal Engineering)
 
@@ -72,6 +88,7 @@ I built a **proof-of-concept AI chatbot** designed to help answer **traveler que
 - Demonstrate safe, scalable generative AI for customer-facing use cases
 
 This work focused on **architecture, data flow, and safety considerations**, not just model output.
+
 
 ---
 
