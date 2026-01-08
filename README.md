@@ -74,6 +74,23 @@ I design **CLI-based AI agents** that integrate directly into developer workflow
 ### 2. Customer-Facing AI Chatbot (POC)
 
 I built a **proof-of-concept AI chatbot** designed to help answer **traveler questions and FAQs** using a **retrieval-augmented generation (RAG)** approach.
+```mermaid
+flowchart LR
+    User[Traveler]
+    UI[Chat Interface]
+    Agent[RAG Agent]
+    Bedrock[AWS Bedrock]
+    VectorDB[AWS Vector Store]
+    Content[Approved Knowledge Sources]
+
+    User --> UI
+    UI --> Agent
+    Agent --> Bedrock
+    Agent --> VectorDB
+    VectorDB --> Content
+    Agent --> UI
+```
+
 
 **High-level architecture:**
 - **AWS Bedrock** for foundation models
