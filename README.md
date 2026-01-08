@@ -32,21 +32,6 @@ This is deliberate and by design.
 
 ### AI Delivery Automation (Internal Engineering)
 
-```mermaid
-flowchart LR
-    Dev[Developer CLI]
-    Agent[Feature-Specific AI Agent]
-    Jira[Jira]
-    GitLab[GitLab]
-    CI[CI/CD Pipeline]
-
-    Dev --> Agent
-    Agent --> Jira
-    Agent --> GitLab
-    GitLab --> CI
-    CI --> GitLab
-    Agent --> Dev
-
 I design **CLI-based AI agents** that integrate directly into developer workflows to automate and accelerate software delivery.
 
 **Key patterns:**
@@ -69,6 +54,26 @@ I design **CLI-based AI agents** that integrate directly into developer workflow
   - Deployment automation
 
 ---
+
+## High-Level Architecture (Conceptual)
+
+### AI Delivery Automation (Internal Engineering)
+
+```mermaid
+flowchart LR
+    Dev[Developer CLI]
+    Agent[Feature-Specific AI Agent]
+    Jira[Jira]
+    GitLab[GitLab]
+    CI[CI/CD Pipeline]
+
+    Dev --> Agent
+    Agent --> Jira
+    Agent --> GitLab
+    GitLab --> CI
+    CI --> GitLab
+    Agent --> Dev
+
 
 ### 2. Customer-Facing AI Chatbot (POC)
 
