@@ -27,24 +27,25 @@ This is deliberate and by design.
 ---
 
 ## What I Build (Conceptually)
+
+## High-Level Architecture (Conceptual)
+
+### AI Delivery Automation (Internal Engineering)
+
+```mermaid
 flowchart LR
-    User[Traveler]
-    UI[Chat Interface]
-    Agent[RAG Agent]
-    Bedrock[AWS Bedrock]
-    VectorDB[AWS Vector Store]
-    Content[Approved Knowledge Sources]
+    Dev[Developer CLI]
+    Agent[Feature-Specific AI Agent]
+    Jira[Jira]
+    GitLab[GitLab]
+    CI[CI/CD Pipeline]
 
-    User --> UI
-    UI --> Agent
-    Agent --> Bedrock
-    Agent --> VectorDB
-    VectorDB --> Content
-    Agent --> UI
-
-
-
-### 1. AI Delivery Automation (Internal Engineering)
+    Dev --> Agent
+    Agent --> Jira
+    Agent --> GitLab
+    GitLab --> CI
+    CI --> GitLab
+    Agent --> Dev
 
 I design **CLI-based AI agents** that integrate directly into developer workflows to automate and accelerate software delivery.
 
