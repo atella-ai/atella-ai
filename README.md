@@ -1,44 +1,82 @@
-# Hi, I'm Amar 👋
+# atella-ai
 
-I build **AI agents for developers and DevOps teams** – not just chatbots, but systems that actually **watch builds, read logs, trigger deployments, and automate real engineering work.**
+## AI Delivery Automation • Agent Architectures • Enterprise Software Engineering
 
-Most of my work is hands-on and production-minded:
+This repository documents **architecture patterns, design approaches, and concepts** for building **AI-driven systems** in real-world enterprise environments — spanning both **internal engineering automation** and **customer-facing AI applications**.
 
-- AI agents for CI/CD, observability, and infra
-- Multi-agent workflows for complex engineering tasks
-- MCP-based tools for GitLab, AWS, and cloud resources
-- LLM-powered developer copilots and internal bots
+I’m a senior software engineer with **20+ years of experience**. Over the past year, my work has focused on designing and implementing **production-grade AI agent systems** that integrate directly with existing workflows to reduce cycle time, coordination overhead, and long-term maintenance cost.
 
 ---
 
-## 🧠 What I Do
+## Why There Is No Public Code
 
-- **DevOps Agents** – agents that monitor pipelines, analyze failures, suggest fixes, and restart jobs  
-- **Build & Release Automation** – agents that watch GitLab/GitHub, manage environments, and trigger QA/Prod deploys  
-- **MCP Tools** – safe, scoped tools for interacting with logs, config stores (AWS Parameter Store), and infra  
-- **Developer Productivity** – code review helpers, doc generators, test generators, project bootstrappers  
-- **Agent Architectures** – planning, tool calling, memory, eval for real-world engineering use cases  
+Most of the systems I build are:
+- **Client-specific**
+- **Production-grade**
+- **Proprietary and confidential**
+
+As a result, this repository intentionally does **not** contain full implementation code.
+
+Instead, it serves as:
+- A reference for **architecture decisions**
+- A place to document **design patterns and trade-offs**
+- A way to explain **how AI is applied responsibly in enterprise settings**
+
+This is deliberate and by design.
 
 ---
 
-## 👨‍💻 About Me
+## What I Build (Conceptually)
 
-- Software Developer → **AI Agent Builder & AI Evangelist**  
-- Focused on **MCP, AWS, Python**, and GitLab CI/CD  
-- I love turning repetitive engineering tasks into **reliable, observable AI workflows**  
-- Enjoy teaching teams how to adopt agentic systems safely and effectively
+### 1. AI Delivery Automation (Internal Engineering)
+
+I design **CLI-based AI agents** that integrate directly into developer workflows to automate and accelerate software delivery.
+
+**Key patterns:**
+- **One agent per feature**
+  - Isolated responsibility
+  - Easier enhancements without regressions
+  - Avoids monolithic agent designs
+- **Developer-native workflows**
+  - CLI-first
+  - Integrated into existing tooling, not layered on top
+
+**Integrations:**
+- **Jira**
+  - Automated ticket context ingestion
+  - Status updates and traceability
+  - Reduced manual coordination
+- **GitLab**
+  - Code context awareness
+  - Merge request orchestration
+  - Deployment automation
 
 ---
 
-## 🚀 Start Here
+### 2. Customer-Facing AI Chatbot (POC)
 
-I’m building out a set of **practical, clone-and-run examples** of AI agents for:
+I built a **proof-of-concept AI chatbot** designed to help answer **traveler questions and FAQs** using a **retrieval-augmented generation (RAG)** approach.
 
-- CI/CD monitoring & auto-recovery  
-- Log analysis + alerting + remediation  
-- Release notes & changelog generation  
-- Internal dev copilot workflows
+**High-level architecture:**
+- **AWS Bedrock** for foundation models
+- **RAG agent** to ground responses in approved content
+- **AWS-managed vector store** for semantic search
+- Emphasis on:
+  - Accuracy and relevance
+  - Reduced hallucination risk
+  - Clear separation between model reasoning and source data
 
-👉 Check out the pinned repositories below (soon™) for working examples.
+**Design goals:**
+- Provide consistent, grounded answers to traveler questions
+- Enable easy content updates without model retraining
+- Demonstrate safe, scalable generative AI for customer-facing use cases
 
-If you’re building in this space or want to collaborate on AI agents for engineering, I’d love to connect.
+This work focused on **architecture, data flow, and safety considerations**, not just model output.
+
+---
+
+## Design Principles
+
+Across both internal and customer-facing systems:
+
+- **Isolation over complexity**
