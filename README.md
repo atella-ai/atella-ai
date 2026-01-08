@@ -69,3 +69,80 @@ flowchart LR
     GitLab --> CI
     CI --> GitLab
     Agent --> Dev
+
+
+### 2. Customer-Facing AI Chatbot (POC)
+
+I built a **proof-of-concept AI chatbot** designed to help answer **traveler questions and FAQs** using a **retrieval-augmented generation (RAG)** approach.
+
+**High-level architecture:**
+- **AWS Bedrock** for foundation models
+- **RAG agent** to ground responses in approved content
+- **AWS-managed vector store** for semantic search
+- Emphasis on:
+  - Accuracy and relevance
+  - Reduced hallucination risk
+  - Clear separation between model reasoning and source data
+
+**Design goals:**
+- Provide consistent, grounded answers to traveler questions
+- Enable easy content updates without model retraining
+- Demonstrate safe, scalable generative AI for customer-facing use cases
+
+This work focused on **architecture, data flow, and safety considerations**, not just model output.
+
+---
+
+## Design Principles
+
+Across both internal and customer-facing systems:
+
+- **Isolation over complexity**
+- **Incremental evolution over rewrites**
+- **Enterprise readiness over novelty**
+- **Leverage for teams, not replacement**
+
+---
+
+## Impact
+
+These approaches:
+- Reduce feature delivery time
+- Lower coordination and operational overhead
+- Improve traceability between requirements, code, and deployments
+- Enable safer use of generative AI in customer-facing contexts
+- Make future enhancements cheaper and less risky
+
+The emphasis is on **durable systems**, not demos.
+
+---
+
+## Background
+
+- **20+ years** professional software engineering experience
+- Deep experience in:
+  - Backend systems
+  - CI/CD pipelines
+  - Developer tooling
+  - Automation and platform engineering
+- Current focus:
+  - AI agents
+  - RAG architectures
+  - Enterprise-scale AI adoption
+
+---
+
+## Transparency Note
+
+While implementations are proprietary, I’m happy to:
+- Discuss **architecture and design decisions**
+- Explain **trade-offs and constraints**
+- Share **non-sensitive diagrams or pseudocode**
+- Walk through **approaches at a conceptual level**
+
+---
+
+## Final Note
+
+This repository is intentionally **light on code and heavy on intent**.  
+It reflects how AI is actually used in enterprise environments — responsibly, incrementally, and with long-term maintainability in mind.
