@@ -28,9 +28,7 @@ This is deliberate and by design.
 
 ## What I Build (Conceptually)
 
-## High-Level Architecture (Conceptual)
-
-### AI Delivery Automation (Internal Engineering)
+### 1. AI Delivery Automation (Internal Engineering)
 
 I design **CLI-based AI agents** that integrate directly into developer workflows to automate and accelerate software delivery.
 
@@ -55,9 +53,7 @@ I design **CLI-based AI agents** that integrate directly into developer workflow
 
 ---
 
-## High-Level Architecture (Conceptual)
-
-### AI Delivery Automation (Internal Engineering)
+### High-Level Architecture — AI Delivery Automation
 
 ```mermaid
 flowchart LR
@@ -73,33 +69,3 @@ flowchart LR
     GitLab --> CI
     CI --> GitLab
     Agent --> Dev
-
-
-### 2. Customer-Facing AI Chatbot (POC)
-
-I built a **proof-of-concept AI chatbot** designed to help answer **traveler questions and FAQs** using a **retrieval-augmented generation (RAG)** approach.
-
-**High-level architecture:**
-- **AWS Bedrock** for foundation models
-- **RAG agent** to ground responses in approved content
-- **AWS-managed vector store** for semantic search
-- Emphasis on:
-  - Accuracy and relevance
-  - Reduced hallucination risk
-  - Clear separation between model reasoning and source data
-
-**Design goals:**
-- Provide consistent, grounded answers to traveler questions
-- Enable easy content updates without model retraining
-- Demonstrate safe, scalable generative AI for customer-facing use cases
-
-This work focused on **architecture, data flow, and safety considerations**, not just model output.
-
-
----
-
-## Design Principles
-
-Across both internal and customer-facing systems:
-
-- **Isolation over complexity**
