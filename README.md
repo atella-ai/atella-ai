@@ -110,6 +110,12 @@ This work focused on **architecture, data flow, and safety considerations**, not
 
 ---
 
+## 🚀 Open Source Projects
+
+> **[kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator)** — Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. Built and tested in production workflows.
+
+---
+
 ## Design Principles
 
 Across both internal and customer-facing systems:
@@ -146,14 +152,6 @@ The emphasis is on **durable systems**, not demos.
   - AI agents
   - RAG architectures
   - Enterprise-scale AI adoption
-
----
-
-## Open Source
-
-| Project | Description |
-|---------|-------------|
-| [kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator) | Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. |
 
 ---
 
