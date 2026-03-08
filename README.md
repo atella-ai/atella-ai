@@ -8,6 +8,12 @@ I’m a senior software engineer with **20+ years of experience**. Over the past
 
 ---
 
+## 🛠️ Tools I've Built
+
+> **[kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator)** — Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. Built and tested in production workflows.
+
+---
+
 ## Why There Is No Public Code
 
 Most of the systems I build are:
@@ -107,12 +113,6 @@ flowchart LR
 - Demonstrate safe, scalable generative AI for customer-facing use cases
 
 This work focused on **architecture, data flow, and safety considerations**, not just model output.
-
----
-
-## 🛠️ Tools I've Built
-
-> **[kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator)** — Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. Built and tested in production workflows.
 
 ---
 
