@@ -149,6 +149,14 @@ The emphasis is on **durable systems**, not demos.
 
 ---
 
+## Open Source
+
+| Project | Description |
+|---------|-------------|
+| [kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator) | Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. |
+
+---
+
 ## Transparency Note
 
 While implementations are proprietary, I’m happy to:
