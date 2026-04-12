@@ -11,8 +11,8 @@ I’m a senior software engineer with **20+ years of experience**. Over the past
 ## 🛠️ Tools I've Built
 
 > **[kiro-orchestrator](https://github.com/atella-ai/kiro-orchestrator)** — Multi-agent orchestrator framework for Kiro CLI. Spawns parallel coding agents in iTerm tabs, coordinated by a master planning agent. Built and tested in production workflows.
-> **[voice-agent](https://github.com/atella-ai/clawbot)** — AI-powered voice agent that makes real outbound phone calls on your behalf. Integrates with OpenClaw as an orchestrated skill — users request calls via Slack, the agent dials, converses naturally, and
-returns a summary. Deployed on AWS with ACP-compatible API.
+
+> **[voice-agent](https://github.com/atella-ai/clawbot)** — AI-powered voice agent that makes real outbound phone calls on your behalf. Integrates with OpenClaw as an orchestrated skill — users request calls via Slack, the agent dials, converses naturally, and returns a summary. Deployed on AWS with ACP-compatible API.
 
 
 ---
